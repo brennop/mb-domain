@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>oh não</title>
+  <script>
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+     for(let registration of registrations) {
+      registration.unregister()
+     } 
+    })
+  </script>
 </head>
 <body>
   <h1>Ohoh, parece que o Mandou Bem mudou de domínio. 🥺</h1>
